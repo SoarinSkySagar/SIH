@@ -25,7 +25,7 @@ export default function Navbar() {
                     <li className={`text-lg cursor-pointer py-5 font-semibold ${pathMatchRoute("/login") ? "text-blue-700 border-b-[3px] border-b-blue-700":"text-black"} `} onClick={() => nav("/login")}>Login</li>
                     <li className={`text-lg cursor-pointer py-5 font-semibold ${pathMatchRoute("/register") ? "text-blue-700 border-b-[3px] border-b-blue-700":"text-black"} `} onClick={() => nav("/register")}>Register</li>
                     <li className='text-lg cursor-pointer py-3 font-semibold'>
-                        <div className='bg-[#C6EFF1] p-2 rounded-full' onClick={{}}>Connect Wallet</div>
+                        <div className='bg-[#C6EFF1] p-2 rounded-full' onClick={() => {}}>Connect Wallet</div>
                     </li>
                 </ul>
             </div>
