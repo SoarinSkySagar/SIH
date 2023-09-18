@@ -8,12 +8,10 @@ import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import Certificate from "./pages/Certificate"
 import Generate from "./pages/Generate"
-import Web3Provider from "./providers/web3";
 
 function App() {
 
   return (
-    // <Web3Provider>
       <ChakraProvider>
       <Router>
         <Header/>
@@ -32,7 +30,6 @@ function App() {
         <Footer/>
       </Router>
     </ChakraProvider>
-    // </Web3Provider>
   );
 }
 
