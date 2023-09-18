@@ -8,10 +8,13 @@ import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import Certificate from "./pages/Certificate"
 import Generate from "./pages/Generate"
+import Web3Provider from "./providers/web3";
 
 function App() {
+
   return (
-    <ChakraProvider>
+    <Web3Provider>
+      <ChakraProvider>
       <Router>
         <Header/>
         <div className="bg-[#C6EFF1] min-h-screen">
@@ -29,6 +32,7 @@ function App() {
         <Footer/>
       </Router>
     </ChakraProvider>
+    </Web3Provider>
   );
 }
 
